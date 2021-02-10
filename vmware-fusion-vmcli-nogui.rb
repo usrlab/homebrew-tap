@@ -1,6 +1,4 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+# Documentation: https://github.com/iotd/vmware-fusion-vmcli-nogui
 class VmwareFusionVmcliNogui < Formula
   desc "vmware fusion shortcut management scripts based on the vmrun cli."
   homepage "https://github.com/iotd/vmware-fusion-vmcli-nogui"
