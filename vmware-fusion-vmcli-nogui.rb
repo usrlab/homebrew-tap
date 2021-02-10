@@ -33,7 +33,7 @@ class VmwareFusionVmcliNogui < Formula
     s
     Custom paths are recommended,$(whoami) refers to the current login user name.
     For example custom path:
-        kdir -p ~/VmwareFusionPro
+        mkdir -p ~/VmwareFusionPro
         and set:
         vm_path="/Users/$(whoami)/VmwareFusionPro"
     EOS
