@@ -3,7 +3,7 @@ class VmwareFusionVmcliNogui < Formula
   desc "vmware fusion shortcut management scripts based on the vmrun cli."
   homepage "https://github.com/iotd/vmware-fusion-vmcli-nogui"
   url "https://github.com/iotd/vmware-fusion-vmcli-nogui/archive/fusion-vmcli-darwin_v1.0.2.tar.gz"
-  sha256 "97be5de653fe2010b23819cedafbdb86e566c0f157d03fa162753a6f0a17ced3"
+  sha256 "401678585c8acdd71dbbe258a2ccf56ffb6648a128b8c49327791f1574ca89f1"
   license "MIT"
 
   # depends_on "cmake" => :build
