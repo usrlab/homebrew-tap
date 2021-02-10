@@ -4,8 +4,8 @@
 class VmwareFusionVmcliNogui < Formula
   desc "vmware fusion shortcut management scripts based on the vmrun cli."
   homepage "https://github.com/iotd/vmware-fusion-vmcli-nogui"
-  url "https://github.com/iotd/vmware-fusion-vmcli-nogui/archive/fusion-vmcli-darwin_v1.0.1.tar.gz"
-  sha256 "b4db02ef93599a06911b9368f399e3591466fd07cd023a70f2b0c6eec4d07a4c"
+  url "https://github.com/iotd/vmware-fusion-vmcli-nogui/archive/fusion-vmcli-darwin_v1.0.2.tar.gz"
+  sha256 "bab7ff81b7e2597ee4811324b6d42c206be287a632881de3bb4f662a17aaeb31"
   license "MIT"
 
   # depends_on "cmake" => :build
@@ -21,7 +21,25 @@ class VmwareFusionVmcliNogui < Formula
     #                      "--disable-silent-rules",
     #                      "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
+    etc.install "fusion-vmcli.conf" => "fusion-vmcli.conf"
+
     bin.install "fusion-vmcli"
+  end
+
+  def caveats
+    info = <<~EOS
+    For the first time, You can edit the configuration file:
+        vim #{HOMEBREW_PREFIX}/etc/fusion-vmcli.conf
+
+    Default path is "/Users/$(whoami)/Documents/Virtual\ Machines.localized".
+    s
+    Custom paths are recommended,$(whoami) refers to the current login user name.
+    For example custom path:
+        kdir -p ~/VmwareFusionPro
+        and set:
+        vm_path="/Users/$(whoami)/VmwareFusionPro"
+    EOS
+    info
   end
 
   test do
