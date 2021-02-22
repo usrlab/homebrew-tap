@@ -1,5 +1,5 @@
 # homebrew-tap
-homebrew-tap from iotd@github
+homebrew-tap from ljq@github
 
 
 ### software list
