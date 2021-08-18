@@ -2,7 +2,7 @@
 class VmwareFusionVmcliNogui < Formula
   desc "vmware fusion shortcut management scripts based on the vmrun cli."
   homepage "https://github.com/ljq/vmware-fusion-vmcli-nogui"
-  url "https://github.com/iotd/vmware-fusion-vmcli-nogui/archive/fusion-vmcli-darwin_v1.0.2.tar.gz"
+  url "https://github.com/ljq/vmware-fusion-vmcli-nogui/archive/fusion-vmcli-darwin_v1.0.2.tar.gz"
   sha256 "401678585c8acdd71dbbe258a2ccf56ffb6648a128b8c49327791f1574ca89f1"
   license "MIT"
 
