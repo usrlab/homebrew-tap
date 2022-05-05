@@ -7,7 +7,6 @@ class VmwareFusionVmcliNogui < Formula
   license "MIT"
 
   # depends_on "cmake" => :build
-  bottle :unneeded
  
   #keg_only :provided_by_macos
 
